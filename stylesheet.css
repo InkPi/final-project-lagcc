@@ -1,0 +1,739 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+
+
+		/*header*/
+
+
+
+
+.navbar {
+	position: fixed;
+	background-color: #0099cc;
+	color: white;
+	width: 100%;
+	margin-top: -20px;
+	padding-top: 10px;
+	display: inline-block;
+	z-index: 2;
+	box-shadow: 5px 1px 30px 10px #404040;
+	border-radius: 0px;
+	border: none;
+	overflow: hidden;
+
+}
+
+/*created id to override bootstrap*/
+/*menu icon border*/
+#myNav{ border: 1px solid white;}
+
+
+.navbar-header a {
+	padding-top: 30px;
+	padding-left: 90px;
+	padding-bottom: 30px; /*give height to header w/o confine toggle down menu*/
+	font-size: 30px;
+}
+
+
+.navbar-header a:link {
+	color: white;
+}
+
+.nav {
+	float: right;
+}
+
+/*button icon*/
+.navbar-toggle {
+	margin-top: 29px;
+}
+
+.navbar-collapse ul {
+	right: -190px;
+}
+
+#logo {
+	position: relative;
+	float:left; /*decrease the extra line after*/
+	margin-top: 20px;
+	width: 100px;
+	padding-left: 40px;
+	color: white;
+	bottom: 17px;
+}
+
+
+.nav li a:link{
+	color: #f2f2f2;
+}
+
+
+.nav li a:visited{
+	color: white;
+}
+
+.collapse li {
+	color: white;
+}
+
+
+
+  .topNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+ul {
+	position: relative;
+	display:inline-block;
+	list-style: none;
+	width: 600px;
+}
+
+.menu {
+	position: relative;
+	float:right;
+	/*right:-100px;*/
+}
+
+li {
+	padding-right: 20px;
+	padding-top: 15px;
+	float: left;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*HOMEPAGE*/
+
+
+
+.sliderPage {
+	background-color: black;
+	padding-top: 60px;
+}
+
+.slides {
+	margin: 0 auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h2 {
+	padding-left:20px;
+}
+
+.editorPicks { 
+	width: 100%;
+	height: 300px;
+}
+
+.popular {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top:10px;
+	height: 320px;
+	background-color: black;
+	color: white;
+}
+
+.divB {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:200px;
+	height: 200px; /*have to set both width and height*/
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.div1 {background-image: url('images/beautyBeastSQ.jpg');
+	}
+.div2 {background-image: url('images/epNoneAnimaSQ/orangeitnb-sq.jpg');
+	}
+.div3 {background-image: url('images/epAnimeSQ/sailor_moonSQ.jpg');
+	}
+.div4 {background-image: url('images/epNoneAnimaSQ/theofficesq.jpg');
+	}
+.div5 {background-image: url('images/epAnimeSQ/shokugekiSomaSQ.jpg');
+	}
+
+
+
+
+
+		/*Body 
+		video divs*/
+
+
+
+
+
+.row {
+	width: 70%;
+	margin: 0 auto;
+	display: block;
+}
+
+.div {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:200px;
+	height: 200px; /*have to set both width and height*/
+	float: left;
+	margin: 0px 5px 5px 5px;
+}
+
+
+
+footer {
+	background-color: #0099cc;
+	display: block;
+	position: relative;
+
+}
+
+
+
+
+
+
+					/*episodes 
+							page*/
+
+
+
+
+
+
+.parallaxEps {
+	position: relative; /*put this for h2's absolute*/
+	background-image: url("images/episodeWallpaper.jpg");
+	opacity: 0.9;
+
+	/*required to set height*/
+	min-height: 500px;
+
+	/*parallax scrolling effect*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+#episodeHead1  {
+	position:absolute; /*have to put this to show*/
+	z-index: 100;
+	color: white;
+	width: 100%;
+	text-align: center;
+	line-height: 550px;
+	font-size: 200px;
+}
+
+#selectEpisodes {
+	display: inline-block;
+	margin-left:998px;
+}
+
+/*main content-episodes*/
+
+.episodes{
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
+	z-index: -1;
+	margin: auto;
+}
+
+.episodes .row1 {
+	width: 69%;
+	margin: auto;
+	bottom: 90px;
+
+}
+
+#allEps {
+	margin-top: 40px;
+	height: 1000px;
+}
+
+.ani1 {background-image: url('images/epAnimeSQ/pokemonSunMoon.jpg');
+	background-position: center;
+	}
+.ani2 {background-image: url('images/epAnimeSQ/narutoSQ.png');
+	background-position: center;
+	}
+.ani3 {background-image: url('images/epAnimeSQ/sailor_moonSQ.jpg');
+	background-position: center;
+	}
+.ani4 {background-image: url('images/epAnimeSQ/onePieceSQ.png');
+	background-position: center;
+	}
+.ani5 {background-image: url('images/epAnimeSQ/shokugekiSomaSQ.jpg');
+	background-position: center;
+	}
+
+
+.cart1 {background-image: url('images/epCartoonSQ/adventureTime.jpg');
+	background-position: center;
+	}
+.cart2 {background-image: url('images/epCartoonSQ/PowerpuffGirlsSQ.png');
+	background-position: center;
+	}
+.cart3 {background-image: url('images/epCartoonSQ/familyGuySQ.jpg');
+	background-position: center;
+	}
+.cart4 {background-image: url('images/epCartoonSQ/simpsonsSQ.jpg');
+	background-position: center;
+	}
+.cart5 {background-image: url('images/epCartoonSQ/spongebobSQ.jpg');
+	background-position: center;
+	}
+
+.nA1 {background-image: url('images/epNoneAnimaSQ/orangeitnb-sq.jpg');
+	background-position: center;}
+.nA2 {background-image: url('images/epNoneAnimaSQ/prettyLittleLiars.jpg');
+	background-position: center;}
+.nA3 {background-image: url('images/epNoneAnimaSQ/theofficesq.JPG');
+	background-position: center;}
+.nA4 {background-image: url('images/epNoneAnimaSQ/arrowSQ.jpg');
+	background-position: center;}
+
+.nA5 {background-image: url('images/epNoneAnimaSQ/walkingDeadSQ.jpeg');
+	background-position: center;}
+
+
+
+
+
+
+/*
+	Pokemon Sun and Moon 
+
+	Episodes Series Page
+
+	*/
+
+
+
+
+
+.paralPokeEp {
+	position: relative;
+	background-image: url('images/imgPokemonSunMoon/pokemonsmoonHead.jpeg');
+	background-position: center;
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+
+	background-attachment: fixed; /*parallax scrolling effect*/
+	min-height: 400px;
+	width:100%;
+
+	padding-left:-5px; /*original pic had left+right white border*/
+	padding-right: -5px;
+
+}
+
+#pokeEpH {
+	position: absolute;
+	z-index: 1;
+	top: 330px;
+	left: 30px;
+	color: white;
+	font-size: 56px;
+}
+
+.pokeBackC {
+	background-color: #cc0000;
+	margin: 0px;
+	padding: 40px 0px 30px 0px;
+}
+
+#pokePara {
+	width: 80%;
+	margin: 0 auto;
+	color: #ffe6e6;
+}
+
+#pokeH2 {
+	background-color: #333333;
+	color: #d9d9d9;
+	margin: 0px;
+	margin-left: 60px;
+	padding: 10px 0px 5px 10px;
+	font-size: 32px;
+}
+.pokeBody {
+	background-color: #333333;
+	width: 100%;
+	height: 900px;
+}
+
+.pageRowPg1 { 
+	width: 69%;
+	margin: 0 auto;
+}
+
+
+.divPage {
+	width: 270px;
+	height: 170px;
+	margin: 8px 10px 8px 10px;
+	border-radius: 10px;
+}
+
+.pokemonPagination {
+	display: inline-block; /*goes to new line*/
+	width: 80%;
+	/*margin: 0 auto;*/
+}
+
+.pokemonPagination a {
+	float: left;
+	padding: 8px 16px;
+	text-decoration:none;
+}
+	/*Each episodes by 
+		Recent Release*/
+
+.ep42 {
+	background-image: url('images/imgPokemonSunMoon/pokemonsmoonEp42.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+}
+.ep26 {
+	background-image: url('images/imgPokemonSunMoon/pokemonsmoonEp26.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.ep2 {
+	background-image: url('images/imgPokemonSunMoon/pokemonsmoonEp2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+}
+.ep1 {
+	background-image: url('images/imgPokemonSunMoon/pokemonsmoonEp1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+
+
+
+
+					/*movies 
+							page*/
+
+
+
+/*Did not have time to customize my movie page*/
+
+
+
+
+.parallaxMovies {
+	position: relative; /*put this for h2's absolute*/
+	background-image: url("images/moviesWallpaper.jpg");
+	opacity: 0.9;
+
+	/*required to set height*/
+	min-height: 500px;
+
+	/*parallax scrolling effect*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+				/*Subscription 
+					Page*/
+
+
+
+.borderBox {
+	height: 736px;
+	padding-top: 130px;
+	width: 100%;
+	background-image: url('images/subscribeMovieWatch.jpg') ;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+#subHead {
+	width: 44%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	color: #404040;
+}
+
+.innerBoxS {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.monthly {
+	position: relative;
+	display: inline-block; /*Put the 2 divs on same line*/
+	background-color: #00bfff;
+	border: 2px solid #80ffff;
+	border-radius: 5px;
+	margin: 5px 10px 5px 5px;
+	width: 300px;
+	height: 230px;
+	float: left;
+}
+
+.monthly ul {
+	width: 250px;
+	color: white;
+}
+
+.monthly button {
+	background-color: white;
+	padding: 10px;
+	margin-left: 40px;
+	border-radius: 5px;
+	color: #00bfff;
+	width: 73%;
+}
+
+.yearly {
+	position: relative;
+	display: inline-block;
+	background-color: #00bfff;
+	border: 2px solid #80ffff;
+	border-radius: 5px;
+	margin: 5px 5px 5px 10px;
+	width: 300px;
+	height: 230px;
+	
+}
+
+.yearly ul {
+	width: 250px;
+	color: white;
+}
+
+.yearly button {
+	background-color: white;
+	padding: 10px;
+	margin-left: 40px;
+	border-radius: 5px;
+	color: #00bfff;
+	width: 73%;
+}
+
+
+
+
+
+					/*contact 
+							page*/
+
+
+
+
+
+
+#contactHeader {
+	padding-top:90px;
+	padding-bottom: 10px;
+	width: 173px;
+	margin: 0 auto;
+	font-size: 32px;
+}
+
+
+.formOuter {
+	background-image: url('images/chalkboardwallpaper.jpg');
+	background-position: center;
+	width: 100%;
+	color: white;
+
+}
+
+/*inside form*/
+.form {
+	width: 24%;
+	padding-top: 70px;
+	height:600px;
+	margin: 0 auto;
+}
+
+.formP {
+	color: #0099cc;
+	font-size: 20px;
+}
+
+.emailBox {
+	width: 300px;
+	height: 30px;
+}
+
+.TextA {
+	width: 300px;
+	height: 100px;
+}
+
+#submitB {
+    width: 90px;
+    height: 30px;
+    margin-top:10px;
+    background-color:#0099cc; /*somehow height only show after putting bgcolor*/
+}
+
+
+
+
+
+							/*Media Queries: 
+							Bottom as everything else 
+						has to be loaded first*/
+
+
+
+
+/*Hide menu + show icon bar*/
+/*make it drop down*/
+@media screen and (max-width: 800px) {
+   .topNav ul li { display: none;}
+   .topNav ul li.icon {
+		float:right;
+		display: block;
+	}
+  .topNav.responsive {position: relative;}
+  .topNav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+/*'editor picks height change'*/
+}
+
+
+/*index 'editor picks' body resize backg size*/
+/*max width goes from most width to least!!*/
+@media only screen and (max-width: 1257px) {
+		.editorPicks {
+			left: 0px;
+			right:-50px;
+			padding-bottom: 10px;
+			height: 500px;
+			
+		}
+
+		.popular {
+			left: 0px;
+			right:-50px;
+			padding-bottom: 10px;
+			height: 500px;
+			
+		}
+	}
+@media screen and (max-width: 628px) {
+  .editorPicks {
+			left: 0px;
+			right:-50px;
+/*			padding-bottom: 10px;
+*/			height: 900px;
+			
+		}
+}
+/*@media only screen and (max-width: 1257px) {
+		.editorPicks {
+			left: 0px;
+			right:-50px;
+			padding-bottom: 10px;
+			height: 900px;
+			
+		}
+	}*/
+/*@media only screen and (max-width: 1150px) {
+		.editorPicks {
+			left: 0px;
+			right:-50px;
+			padding-bottom: 10px;
+			height: 700px;
+			
+		}
+@media only screen and (max-width: 800px) {
+		.editorPicks {
+			left: 0px;
+			right:-50px;
+			padding-bottom: 10px;
+			height: 900px;
+			
+		}
+	}*/
+/*@media only screen and (max-width: 900px) {
+		.editorPicks {
+			left: 0px;
+			right:-50px;
+			padding-bottom: 10px;
+			height: 700px;
+			
+		}
+	}*/
+
+/*index 'trending' body resize backg size*/
+/*@media only screen and (max-width: 1257px) {
+		.popular {
+			left: 0px;
+			right:-50px;
+			padding-bottom: 10px;
+			height: 500px;
+			
+		}
+	}*/
+
+/*
+@media only screen and (max-width: 500px) {
+		.col-5 {width: 100%;
+			
+		}
+	}*/

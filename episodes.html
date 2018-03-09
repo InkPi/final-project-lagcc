@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VidBox| Episodes</title>
+  	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- link to w3schools for their style -->
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse"> <!-- id="topNavId" -->
+	<div class="container-fluid">
+    	<div class="navbar-header">
+    		<button type="button" class="navbar-toggle" id = 
+    	"myNav" data-toggle="collapse" data-target="#myNavbar">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>                        
+     		 </button>
+     		 <a class="navbar-brand" id= "logo" href="index.html">VidBox</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+      		<ul class="nav navbar-nav">
+        		<li><a href="episodes.html">Episodes</a></li>
+       	 		<li><a href="movies.html">Movies</a></li>
+        		<li><a href="subscription.html">Subscribe</a></li>
+        		<li><a href="contact.html">Contact Us</a></li>
+       		</ul>
+       	</div>
+    </div>
+	</nav>
+
+
+
+
+	<div class="parallaxEps">
+		<h1 id="episodeHead1">EPISODES</h1>
+	</div>
+
+
+
+
+	<h2 id="episodeHead">All the Episodes</h2>
+		<form>
+		<select id="selectEpisodes" onchange="changeFunc()">
+			<option value="select">Select Category</option>
+			<option value="allepisodes">All Episodes</option>
+			<option value="anime">Anime</option>
+			<option value="cartoon">Cartoon</option>
+			<option value="nonAnim">Fiction</option>
+			<!-- <option value="nonanimation">Non-Animation</option> -->
+		</select>
+	</form>
+
+
+
+
+	<div class="episodes">
+		<!-- found code here: https://codepen.io/bkainteractive/pen/VLxLYp -->
+		<!-- http://kenwheeler.github.io/slick/ -->
+
+		<div class="row row1" id="allEps">
+
+		<div id="anime">
+			<a href="pokemonEp.html"><div class="div ani1"></div></a>
+			<div class="div ani2"></div>
+			<div class="div ani3"></div>
+			<div class="div ani4"></div>
+			<div class="div ani5"></div>
+	</div> <!-- #anime -->
+
+			<div id="cartoon">
+			<div class="div cart1"></div>
+			<div class="div cart2"></div>
+			<div class="div cart3"></div>
+			<div class="div cart4"></div>
+			<div class="div cart5"></div>
+	</div> <!-- #cartoon -->
+		
+		<div id="noneAnim">
+			<div class="div nA1"></div>
+			<div class="div nA2"></div>
+			<div class="div nA3"></div>
+			<div class="div nA4"></div>
+			<div class="div nA5"></div>
+	</div><!-- #fiction -->
+</div> <!-- all -->
+</div>
+
+
+
+
+<footer align="center">@March 3, 2018</footer>
+
+
+
+
+
+
+
+	<script>
+function changeFunc(){
+			var x = document.getElementById("selectEpisodes").value;
+			// var a=document.getElementsByClass("animeTab");
+			// var b=document.getElementsByClass("cartoonTab");
+			// var c=document.getElementsByClass("noneAnimTab");
+			if (x == "anime") { //if doesn't =anime, no need for alleps ..
+				document.getElementById("anime").style.display = "block";
+				document.getElementById("anime").style.height = "600px";
+				document.getElementById("cartoon").style.display = "none";
+				// document.getElementById("allEps").style.display = "none";
+				document.getElementById("noneAnim").style.display = "none";
+			} else if (x == "cartoon"){
+				document.getElementById("cartoon").style.display = "block";
+				document.getElementById("cartoon").style.height= "600px";
+				document.getElementById("anime").style.display = "none";
+				// document.getElementById("allEps").style.display = "none";
+				// document.getElementById("noneAnim").style.display = "none";
+			} else if (x == "nonAnim"){
+				document.getElementById("noneAnim").style.display = "block";
+				document.getElementById("noneAnim").style.height="600px";
+				document.getElementById("cartoon").style.display = "none";
+				document.getElementById("anime").style.display = "none";
+				// document.getElementById("allEps").style.display = "none";
+			} 
+			else if (x == "allepisodes"){
+				document.getElementById("allEps").style.height="900px";
+				document.getElementById("anime").style.display = "inline"; //block dives
+				document.getElementById("anime").style.height="400px";
+				document.getElementById("noneAnim").style.height="400px";
+				document.getElementById("cartoon").style.display = "block";
+				document.getElementById("cartoon").style.height="400px";
+				document.getElementById("noneAnim").style.display = "block";
+			} 
+		}
+
+
+
+		// function iconDrop() {
+		// 	var x= document.getElementById("topNavId");
+		// 	if (x.className === "topNav") {
+		// 		x.className += "responsive";
+		// 	} else {
+		// 		x.className = "topNav";
+		// 	}
+		// }
+	</script>
+</body>
+</html>
